@@ -1,21 +1,23 @@
 const display = document.getElementById("display");
 
-function appendToDisplay(input){
+function appendToDisplay(input) {
     display.value += input;
 }
 
-function clearDisplay(){
+function clearDisplay() {
     display.value = "";
 }
 
-function calculate(){
+function calculate() {
     try {
-        display.value = eval(display.value);
+        let result = eval(display.value);
+        
+        result = Math.round(result * 1000) / 1000; 
+        
+        display.value = result;
+        
         display.scrollLeft = display.scrollWidth;
+    } catch (error) {
+        display.value = "Error";
     }
-
-    catch (error){
-        display.value = "Error"
-    }
-    
 }
