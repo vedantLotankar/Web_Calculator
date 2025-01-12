@@ -10,7 +10,7 @@ function clearDisplay(){
 
 function calculate(){
     try {
-        display.value = eval(display.value);
+        display.value = Math.round(eval(display.value), 3);
         display.scrollLeft = display.scrollWidth;
     }
 
