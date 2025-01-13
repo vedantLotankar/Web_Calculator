@@ -16,6 +16,8 @@ function calculate() {
         
         display.value = result;
         
+        display.value = Math.round(eval(display.value), 3);
+      
         display.scrollLeft = display.scrollWidth;
     } catch (error) {
         display.value = "Error";
