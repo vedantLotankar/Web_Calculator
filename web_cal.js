@@ -36,7 +36,7 @@ function calculate() {
         
         display.value = result;
         
-        display.value = Math.round(eval(display.value), 3);
+        display.value = eval(display.value);
       
 
         display.scrollLeft = display.scrollWidth;
