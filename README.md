@@ -1,1 +1,1 @@
-This is a basic web calculator with basic math operations
+This is a experimental web calculator to experiment with new features and UI
